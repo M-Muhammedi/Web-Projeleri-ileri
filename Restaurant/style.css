@@ -9,6 +9,10 @@ body {
 
 /*! Navbar start */
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -51,7 +55,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(images/hbrg.jpg);
   width: 100%;
-  height: calc(100vh - 70px);
+  height:100vh;
   background-position: center;
   background-size: cover;
 }
@@ -285,6 +289,7 @@ body {
   .navbar {
     width: 100%;
     padding: 0px 10px;
+    
   }
   .logo {
     margin-right: 3px;
@@ -304,13 +309,14 @@ body {
   }
   .content {
     width: 100%;
-    height: calc(100vh - 70px);
+    height: 100vh;
     align-items: center;
   }
   .content-box {
     width: 100%;
     top: 0;
     left: 0;
+    margin-top: 50px;
   }
   .content-box h1 {
     margin-top: 50px;
